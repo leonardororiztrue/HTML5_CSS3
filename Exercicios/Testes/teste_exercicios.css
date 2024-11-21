@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+/* ABAIXO OS MARCADORES DESTA FOLHA DE ESTILO (CSS) IRÃO ATUAR APENAS NO PARAGRAFO ESPECÍFICO PARA QUE NÃO INFLUENCIE NOS DEMAIS */
+
+p1 {
+    background-color: rgb(247, 9, 9);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    color: darkblue;
+    text-decoration: underline;
+    text-align: center;
+}
+
+div {
+    font-size: 20px;
+    text-align: justify;
+    color: white;
+    background-image: linear-gradient(to right, white 30%, rgb(26, 22, 224));
+}
+
+p2 {
+    font-size: 20px;
+    text-align: justify;
+    color: white;
+    background-image: linear-gradient(to left, white 20%, red);
+}
+
+p#paragrafo1, p#paragrafo3 { color: blue;}
+p#paragrafo2 { color: red;}
+p#paragrafo4 { font-size: 50px; color: aqua;}
+p#paragrafo5 { font-family: Arial, Helvetica, sans-serif; font-size: 30px; color: blueviolet;}
+p#paragrafo5:hover{color: black;} /* PSEUDOCLASSE (:) PARA ALTERAR A COR DO PARAGRAFO5 */
+
+.especial1:hover {color: red;}   /* PSEUDOCLASSE (:) PARA TER EFEITO DE COR AO PASSAR O MOUSE NO LINK */
+.especial1:active {color: yellow;} /* PSEUDOCLASSE (:) PARA TER EFEITO DE COR AO CLICAR O MOUSE NO LINK */
+
+/* a:visited {color: red} PSEUDOCLASSE (:) PARA TER EFEITO DE COR NO LINK DEPOIS DE CLICADO */
+
+.especial1::after{content: ' [LINK]'; text-decoration: none; font-family: Arial, Helvetica, sans-serif; font-size: large; color: red;} /*PSEUDOELEMENTO (::) PARA COLOCAR A PALAVRA [LINK] NA FRENTE DE TODOS OS LINKS DO HTML */
+
+.especial2::before{content: '→→'; color:brown;font-size: xx-large;} /*PSEUDOELEMENTO (::) BEFORE PARA COLOCAR AS SETINHAS */
+.especial2::after{content: ' [LINK]'; font-size: large; color: red;} /*PSEUDOELEMENTO (::) AFTER PARA COLOCAR [LINK] NA INDICAÇÃO */
+.especial2:hover{color: rgb(7, 243, 77);} /*PSEUDOCLASSE (:) EM UM LINK ISOLADO (ESPECIAL) */
+
+p#modelobox1 { 
+    background-color: darkblue;
+    color: white;
+    font-size: 50px;
+    height: 400px;
+    width: 400px;
+
+    border-width: 15px;
+    border-style: double;
+    border-color: red;
+    border-block-color: rgb(6, 102, 57);
+
+    margin-top: 100px;
+    margin-left: 400px;
+
+    padding-top: 80px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 60px;
+
+}
+
+.classemodbox1 {
+    background-color: white;
+    font-size: 30px;
+
+    border-style: dashed;
+    border-color: red;
+}
+
+p#modelobox3, p#modelobox4, p#modelobox2, p#modelobox5 {display: inline-block;} /* PARA COLOCAR AS CAIXAS ABAIXO LADO A LADO */
+
+p#modelobox2 {
+    background-color: yellow;
+    color: black;
+    font-size: 40px;
+    text-align: center;
+
+    height: 200px;
+    width: 300px;
+    padding: 40px 10px 10px 1px;
+}
+
+p#modelobox3 {
+    background-color: lightpink;
+    color: blue;
+    font-size: 40px;
+
+    font-size: 40px;
+    text-align: center;
+
+    height: 200px;
+    width: 300px;
+    padding: 40px 10px 10px 1px;
+}
+
+p#modelobox4 {
+    background-color: aqua;
+    color: blueviolet;
+    font-size: 40px;
+
+    font-size: 40px;
+    text-align: center;
+
+    height: 200px;
+    width: 300px;
+    padding: 40px 10px 10px 1px;
+}
+
+p#modelobox5 {
+    background-color: rgb(72, 35, 158);
+    color: rgb(196, 238, 9);
+    font-size: 40px;
+
+    font-size: 40px;
+    text-align: center;
+
+    height: 200px;
+    width: 300px;
+    padding: 40px 10px 10px 1px;
+}

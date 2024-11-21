@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Imagens</title>
+</head>
+<body>
+   <h1>Imagem dinâmica</h1>
+   <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p> 
+   <picture>
+        <source media="(max-width: 750px)" srcset="imagens/pequeno.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/medio.png" type="image/png">
+        <img src="imagens/Grande.png" alt="Imagem Grande">
+  </picture>
+
+  <h1>Reproduzindo Áudio</h1>
+  <!--<p>Vamos aprender a reproduzir áudios em HTML5. </p>
+  <audio src="audios/adele.mpeg" controls autoplay></audio>-->
+  
+  <!--Pode ser utilizado o exemplo abaixo também-->
+
+  <audio preload="metadata" autoplay controls loop>
+    <source src="audios/adele.mpeg" type="audio/mpeg">
+    <!--Pode ser disponibilizado na sequencia vários tipos de arquivos de audio-->
+    <p>Infelizmente seu navegador não consegue reproduzir o aúdio. <a href="audios/adele.mpeg" Clique aqui par abaixar o arquivo MP3></a></p>
+  </audio>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            /* Existem as MEDIDAS ABSOLUTAS: cm, mm, in(polegada), px(pixel), pt(ponto), pc(paica) - Essas medidas podem várias de acordo com o tamanho da tela do dispositivo. O Ponto e a Paica normalmente são utilizados para material impresso em papel.
+            
+            MEDIDAS RELATIVAS: em(tamanho atual da fonte), ex(altura X de uma fonte), rem(relativo ao ROOT da letra m), vw(largura da viewport), vh(altura da viewport), % (porcentagem)
+            
+            Iremos trabalhar basicamente com a px(absoluta) e em(relativa)
+            
+            O tamanho normalmente das fontes é de 16px
+            
+            weight(peso) width(largura) height(altura)
+            o peso pode ser: light, normal, bold, bolder
+            
+            shorthand
+            font: equivale a padronização dos comandos de texto na seguinte ordem: font-style, font-weight, font-size, font-family (nessa ordem)
+
+            */
+        }
+        h1 {
+            text-align: left;
+            color: blue;
+            font-size: 80px;
+            font-style: italic;
+            text-decoration: underline;
+        }
+        h2,h3 {
+            font: italic bolder 3em sans-serif;
+           
+        }
+        h4 {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 40px;
+            color: brown;
+        }
+        p3 {
+            color: rgb(43, 226, 43);
+        }
+        p4 {
+            color:rgb(139, 102, 0);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p1 style="color: red;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia perspiciatis fugit dignissimos tenetur! Rerum soluta, hic vitae ipsum, debitis voluptate aliquid, totam vero impedit sit neque enim esse iusto placeat!</p1>
+    <h2>Subtítulo do exercício</h2>
+    <p2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, harum quo odio nulla hic nobis cupiditate esse minima deserunt nostrum tempora incidunt totam soluta tempore, magni, reiciendis dolore minus. Placeat?</p2>
+    <h3>Segundo Subtítulo do exercício</h3>
+    <p3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, magni minima veniam molestiae necessitatibus deleniti quo nam atque! Nihil beatae quisquam possimus optio delectus ducimus nobis obcaecati ipsam sapiente a.</p3>
+    <h4>Terceiro Subtítulo do exercício</h4>
+    <p4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis et quaerat consequatur dolores alias ipsa consectetur culpa exercitationem necessitatibus dicta, in atque iure ducimus ab, eveniet, blanditiis maxime doloribus magnam?</p4>
+</body>
+</html>

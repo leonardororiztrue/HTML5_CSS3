@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/* Em HTML tudo que é id é equivalente no CSS ao seu identificador # (pode um elemento)
+   Em HTML tudo que é class é equivalente no CSS ao seu identificador . (pode vários)
+
+   É possivel usar id e class juntos na mesma declaração, basta colocar os nomes separados por espaço. Ex: <span id="html1 css1">TESTE</span>, porém, o id sempre irá sobre por a classe. Pode-se usar também mais de uma classe ou mais de um id na mesma declaração.
+*/
+
+body {
+    background-color: rgb(203, 249, 255);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 { color: rgb(4, 109, 0); }
+
+h1#principal {
+    color: blue;
+    background-color: rgb(199, 132, 132);
+    text-align: center;
+}
+
+h1#sub1, h1#sub2 { color: red; }
+
+p#html1 { color: green; }
+p#html2 { color: red; }
+p#html3 { color: blue; }
+
+h2 { color: rgb(19, 240, 4) }
+
+.css1 {color: rgb(201, 201, 105); font-weight: bold;}

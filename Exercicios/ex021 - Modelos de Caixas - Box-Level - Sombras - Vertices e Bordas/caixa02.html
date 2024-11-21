@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color: darkgray;
+            padding: 3px;
+            box-shadow: 5px 5px 5px black;
+           
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 20px 0px 20px 0px;     
+            box-shadow: 10px 10px 10px black;       
+        }
+        article {
+            background-color: lightgray;
+            padding: 5px;
+        }
+        article > aside {
+            background-color: bisque;
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            margin: 30px 10px 30px 10px;
+            padding: 7px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+        div#bola {
+            height: 100px;
+            width: 100px;
+            background-color: white;
+            margin: auto;
+            border-radius: 50%;
+            box-shadow: 10px 10px 10px black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+            <a href="#">Link 5</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Política Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícias sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At eligendi vel doloremque repellat adipisci est optio reprehenderit quibusdam. Quisquam tenetur facilis aut tempore ducimus sed fugit et quo veritatis temporibus. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores unde quos delectus reprehenderit quisquam veritatis error dolorum sequi ut, officiis distinctio, necessitatibus sint temporibus minus non. Sit dolorum possimus unde. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, earum? Porro, debitis ipsa assumenda dolor provident nisi maxime vel facere laborum ab pariatur veniam ad, dolores voluptatem facilis tenetur accusamus?</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Leonardo Roriz Gatão Gostosão Lindão</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
+
+<!-- EX021 - MODELOS DE CAIXAS - BOX-LEVEL - CAIXA02.HTML -->
