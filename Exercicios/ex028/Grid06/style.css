@@ -1,0 +1,48 @@
+@charset "UTF-8";
+.conteiner {
+    background-color: lightgrey;
+    border: 1px dashed black;
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.caixa1 {
+    border: 1px dashed red;
+    /*grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 5; SUBSTITUIDO PELO SHORTHAND ABAIXO */
+
+    /*grid-row: 1/2;
+    grid-column: 1/5; SUBSTITUIDO PELO SHORTHAND ABAIXO */
+
+    grid-area: 1/1/2/5; /*OU grid-area: 1/1/2/span 4; */
+}
+
+.caixa2 {
+    border: 1px dashed red;
+    /*grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3; SUBSTITUIDO PELO SHORDHAND ABAIXO */
+
+    /*grid-row: 2/4;
+    grid-column: 1/span 4; SUBSTITUIDO PELO SHORTHAND ABAIXO */
+
+    grid-area: 2/1/4/3;
+}
+
+.caixa3 {
+    border: 1px dashed red;
+    /*grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 5; SUBSTITUIDO PELO SHORTHAND ABAIXO */
+
+    /*grid-row: 2/4;
+    grid-column: 3/span 2; SUBSTITUIDO PELO SHORTHAND ABAIXO */
+
+    grid-area: 2/3/4/5;
+}
